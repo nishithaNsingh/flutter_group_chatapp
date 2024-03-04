@@ -17,6 +17,35 @@ class _GroupPageState extends State<GroupPage> {
         ),
         centerTitle: true,
       ),
+      body: Column(
+        children: [
+          Expanded(child: Container(),),
+
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15,vertical: 20),
+          child: Row(
+            children: [
+            Expanded(child: TextFormField(
+              decoration: const InputDecoration(
+                hintText: "Type here...",
+                border: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    width: 2,
+                  ),
+                ),
+              ),
+            )),
+            IconButton(
+              onPressed: (){},
+              icon: Icon(
+                  Icons.send,
+                color: Colors.teal,
+              ),
+            ),
+          ],),
+        ),
+       ],
+      ),
     );
   }
 }
